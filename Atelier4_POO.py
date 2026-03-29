@@ -56,9 +56,13 @@ v2=Voiture("KM3 PO9", "Honda Civic",2020,49045 )
 v3=Voiture("IU5 GSM","Toyota Camry",2023,110980)
 
 
+e1.affecterVoiture(v1)
+e2.affecterVoiture(v2)
+
 e1.afficherInformation()
 e2.afficherInformation()
 e3.afficherInformation()
 v1.afficherInformation()
 v2.afficherInformation()
 v3.afficherInformation()
+

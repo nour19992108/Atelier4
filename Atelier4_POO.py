@@ -41,3 +41,16 @@ class Voiture:
               f"kilometrage : {self.kilometrage}")
         if self.chauffeur is not None:
             print(f"Chauffeur : {self.chauffeur.nom}, {self.chauffeur.prenom}")
+
+#Objets Employe
+e1=Employe(36477994, "Ali","Nourdinne")
+e2=Employe(83793034,"Cristiano","Ronaldo")
+e3=Employe(83838903,"Mohammed","Mati")
+
+#Objet Voiture
+
+v1=Voiture("LMA OPG","Honda Civic",2025,6780)
+v2=Voiture("KM3 PO9", "Honda Civic",2020,49045 )
+v3=Voiture("IU5 GSM","Toyota Camry",2023,110980)
+
+

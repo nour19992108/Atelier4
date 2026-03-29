@@ -59,6 +59,9 @@ v3=Voiture("IU5 GSM","Toyota Camry",2023,110980)
 e1.affecterVoiture(v1)
 e2.affecterVoiture(v2)
 
+e1.retirerVoiture(v2)
+e1.retirerVoiture(v1)
+
 e1.afficherInformation()
 e2.afficherInformation()
 e3.afficherInformation()

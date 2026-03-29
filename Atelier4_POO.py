@@ -4,3 +4,30 @@ class Employe:
         self.nom=nom
         self.prenom=prenom
         self.voitureService =  None
+    def afficherInformation(self):
+        print(f'Nom : {self.nom}',f'Prenom : {self.prenom}, Permis : {self.num_permis}')
+        if self.voitureService is not None:
+            print(f'Voiture Service :  {self.voitureService.marque} {self.voitureService.matricule}')
+        else:
+            print("Aucune voiture de service !")
+
+    def affecterVoiture(self,voiture):
+        if self.voitureService is not None:
+            print("Une voiture de service est déja affectée a ce chauffeur !")
+        elif voiture.chauffeur is not None:
+            print("La voiture est déja affectée a un autre chauffeur !")
+        else:
+            self.voitureService = voiture
+            voiture.chauffeur = self
+
+    def retirerVoiture(self,voiture):
+        if self.voitureService is None:
+            print("Aucune voiture a retirer! ")
+        elif self.voitureService != voiture:
+            print("Cette voiture n'est pas affecter a ce chauffeur !")
+        else:
+            self.voitureService = None
+
+
+
+

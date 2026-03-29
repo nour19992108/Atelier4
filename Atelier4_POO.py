@@ -37,10 +37,12 @@ class Voiture:
         self.kilometrage=kilometrage
         self.chauffeur=None
     def afficherInformation(self):
-        print(f" matricule : {self.matricule}, marque : {self.marque}, anne : {self.annee}, "
+        print(f"matricule : {self.matricule}, marque :{self.marque}, anne : {self.annee}, "
               f"kilometrage : {self.kilometrage}")
         if self.chauffeur is not None:
             print(f"Chauffeur : {self.chauffeur.nom}, {self.chauffeur.prenom}")
+        else:
+            print("Aucun chauffeur !")
 
 #Objets Employe
 e1=Employe(36477994, "Ali","Nourdinne")
@@ -54,3 +56,9 @@ v2=Voiture("KM3 PO9", "Honda Civic",2020,49045 )
 v3=Voiture("IU5 GSM","Toyota Camry",2023,110980)
 
 
+e1.afficherInformation()
+e2.afficherInformation()
+e3.afficherInformation()
+v1.afficherInformation()
+v2.afficherInformation()
+v3.afficherInformation()

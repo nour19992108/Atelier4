@@ -29,5 +29,10 @@ class Employe:
             self.voitureService = None
 
 
-
-
+class Voiture:
+    def __init__(self,matricule,marque,annee,kilometrage):
+        self.matricule=matricule
+        self.marque=marque
+        self.annee=annee
+        self.kilometrage=kilometrage
+        self.chauffeur=None
